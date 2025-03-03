@@ -3,6 +3,4 @@ title: "Git Recap"
 description: ""
 ---
 
-* todo
-
-This is some text over here
+* [How to Make Almost Anything](https://fab.cba.mit.edu/classes/863.22/index.html)

@@ -9,7 +9,7 @@ export async function getStaticPaths() {
   pages = pages.map((page) => {
     const { title, slug } = page.data;
     return {
-      params: { slug },
+      params: { slug: page.id },
       props: { ...page },
     };
   });
@@ -19,7 +19,7 @@ export async function getStaticPaths() {
     const { title, slug } = post.data;
     return {
       params: { slug: post.id },
-      props: { ...post },
+      props: { ...post, slug: post.id },
     };
   });
   return [pages, posts].flat();
@@ -31,7 +31,7 @@ const { title } = Astro.props.data;
 ---
 
 <Layout>
-  <main class="">
+  <main class="max-w-screen-sm mx-auto">
     <h1 class="font-heading text-6xl mb-5">{title}</h1>
     <Markdown>
       <Content />
