@@ -1,9 +1,9 @@
 ---
-title: 3 2 1 Action
-subtitle: A playful acting experience
-description: A description of the project that will appear in google
-thumbnail_image: https://i.imgur.com/dLjE34A.jpeg
-thumbnail_video: https://i.imgur.com/nSA9QAL.mp4
+title: Action!
+subtitle: Roll the camera
+description: Experience the magic of cinematic camera movements with 'Action!' — an interactive installation where visitors can step into behind-the-scenes filming studios and try iconic techniques like Dolly Zoom, Arc Shot, Zero-Gravity Shot, and Mirror Shot.
+thumbnail_image: https://i.imgur.com/O4AToAa.jpeg
+thumbnail_video: https://youtu.be/mENEus1K93U
 ogImage: https://localhost2025.metaa.ch/og.png
 ---
 
@@ -11,42 +11,64 @@ import Heading from "../../../components/Heading.astro";
 import Grid from "../../../components/Grid.astro";
 import Video from "../../../components/Video.astro";
 import Vimeo from "../../../components/Vimeo.astro";
+import Youtube from "../../../components/Youtube.astro";
 import Image from "../../../components/Image.astro";
 import BigText from "../../../components/BigText.astro";
 import Section from "../../../components/Section.astro";
 import Container from "../../../components/Container.astro";
 
-<Vimeo vimeoID="1019560381" />
+<Youtube link="https://www.youtube.com/embed/mENEus1K93U?si=Rhd8LxhBLO0i7jS7" />
 <Container>
   <BigText>
-    3 2 1 action is an installation where people can reanact famous scenes from
-    cinema, without knowing which ones they are in advance. The results can be
-    printed on a Phonotrope afterwards.
+    ‘Action!’ is an interactive installation that immerses visitors in a
+    hands-on experience of camera movements in cinema. The setup features
+    multiple behind-the-scene filming studios, each showcasing a cinematic
+    technique such as Dolly Zoom, Arc Shot, Zero-Gravity Shot and Mirror Shot.
   </BigText>
 </Container>
 
 <Grid cols="2">
-  <Image src="https://i.imgur.com/dLjE34A.jpeg" alt="A cube in space" />
-  <Video src="https://i.imgur.com/nSA9QAL.mp4" />
+  <Image src="https://i.imgur.com/INt66tf.jpeg" alt="Dolly zoom main photo" />
+  <Image src="https://i.imgur.com/O4AToAa.jpeg" alt="Arc shot main photo" />
 </Grid>
 
 <Section title="Description">
 
-Step into the unknown! 3 2 1 Action invites participants to perform scenes from famous movies—without any prior knowledge of what they are acting out. Using minimal prompts, gestures, and props, players reenact cinematic moments while a real-time system captures their movements. The results? Unexpected, hilarious, and sometimes eerily accurate performances.
+Cameras in filmmaking are more than just recording devices—
+they are storytelling tools that shape what audiences focus on.
+This installation allows audiences to step into the role of the
+cameraman by exploring classic movie clips demonstrating each
+technique. By physically playing with the camera, they can simulate
+professional cinematographic effects. Their real-time footage
+is displayed alongside the original movie clip, offering a direct
+visual comparison and a deeper understanding of the techniques.
 
-After the session, the recorded footage can be transformed into a Phonotrope, a mesmerizing animated loop that brings the scenes to life in a unique way.
-
-This installation celebrates spontaneity, the magic of film, and the playful joy of performing in front of an audience—even if you don’t know the script!
+As an engaging and educational experience, ‘Action!’ makes the
+production part of cinema accessible to a general audience. Audiences
+not only gain insight into the technical aspects of filmmaking
+but also leave with their own recorded movie clips, allowing
+them to share their creations and continue the conversation
+beyond the exhibition space.
 
 </Section>
 
 <Section title="Technical Materials">
 
-Camera Setup: Motion-tracking cameras capture real-time movement.
-Projection System: Overlays visual references and prompts for improvisation.
-Phonotrope Output: A turntable-based animation technique converts footage into looping animations.
-Sound Design: Adaptive audio cues guide participants subtly through their scenes.
-Processing & Playback: A custom software pipeline stitches together the final render for projection and print.
+Hardware:
+
+- 1x Square/Round Table
+- 4x Smartphones/Webcamera
+- 4x Phone Holders with Handles
+- 2x Sliders - for Dolly Zoom and Mirror Shot
+- 2x Robot Arms - for Zero-Gravity Shot and Arc Shot
+- 4x Display Screens
+- 4x Studio Lights
+- nx cinema miniature
+- nx Mounts, stands, and cables
+
+Software & Tech:
+
+- ‘Action!’ Project Website (https://head-plaza.vercel.app/)
 
 </Section>
 
@@ -54,14 +76,18 @@ Processing & Playback: A custom software pipeline stitches together the final re
 <Heading class="tib-rp">Experiments</Heading>
 
 <Grid cols={4}>
-  <Video src="https://i.imgur.com/nSA9QAL.mp4" />
-  <Video src="https://i.imgur.com/nSA9QAL.mp4" />
-  <Video src="https://i.imgur.com/nSA9QAL.mp4" />
-  <Video src="https://i.imgur.com/nSA9QAL.mp4" />
-  <Video src="https://i.imgur.com/nSA9QAL.mp4" />
-  <Video src="https://i.imgur.com/nSA9QAL.mp4" />
-  <Video src="https://i.imgur.com/nSA9QAL.mp4" />
-  <Video src="https://i.imgur.com/nSA9QAL.mp4" />
+
+<Image src="https://i.imgur.com/SZW2J0V.jpeg" alt="dolly zoom detail" />
+<Image src="https://i.imgur.com/6XZ0yjn.jpeg" alt="dolly zoom detail 2" />
+<Image src="https://i.imgur.com/dYm1q4P.jpeg" alt="arc shot detail" />
+<Image src="https://i.imgur.com/fp8Z7Er.jpeg" alt="arc shot detail 2" />
+<Image src="https://i.imgur.com/ncs0kUS.jpeg" alt="arc shot detail 3" />
+<Video src="https://i.imgur.com/mzKxtXf.mp4" />
+<Video src="https://i.imgur.com/KgPd1tI.mp4" />
+<Video src="https://i.imgur.com/7b18GRI.mp4" />
+<Video src="https://i.imgur.com/yF0qZun.mp4" />
+<Video src="https://i.imgur.com/mcSb67s.mp4" />
+
 </Grid>
 
 </Container>
